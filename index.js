@@ -53,11 +53,10 @@ try {
 
   /// functions default parameters ///
 
-  /*
 	(function UseDefaultParameters() {
     
 		// Correct the syntax errors in the function.
-		function hello(who) {
+		function hello(who = 'World') {
 			return 'Hello ' + who + '!';
 		}
 
@@ -68,7 +67,6 @@ try {
 		
 		solved++;
 	})();
-	*/
 
   /// Rest parameter ///
 
