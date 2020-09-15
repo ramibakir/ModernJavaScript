@@ -325,10 +325,16 @@ try {
 
   /// class (bonus) ///
 
-  /*
 	(function UseClass() {
 		// Let Multiplier be a class with the appropriate methods to succeed.
-		let Multiplier = 'class';
+		let Multiplier = class {
+			constructor(x){
+				this.x = x;
+			}
+			multiply() {
+				return this.x * 3;
+			}
+		};
 
 		// Don't make changes below this line	
 		
@@ -338,7 +344,6 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
 
   /// Template strings (bonus) ///
 
