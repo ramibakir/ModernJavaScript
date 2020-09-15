@@ -151,15 +151,15 @@ try {
 
   /// Destructuring ///
 
-  /*
 	(function UseArrayDestructuring1() {
 		const arr = [1, 2, 3, 4, 5, 6];
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// Tip: Spread operator might be needed too.
-		let a = arr[0];
-		let b = arr[2];
-		let c = arr.slice(3); 
+		const [first, , third, ... arrRest] = arr;
+		let a = first;
+		let b = third;
+		let c = arrRest; 
 
 		// Don't make changes below this line	
 		
@@ -169,7 +169,6 @@ try {
 		
 		solved++;
 	})();
-	*/
 
   /*
 	(function UseArrayDestructuring2() {
