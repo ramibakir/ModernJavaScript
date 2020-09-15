@@ -135,10 +135,11 @@ try {
 		solved++;
 	})();
 
-  /*
 	(function UseArrow2() {
 		// Correct the errors in the arrow function.
-		let add = x, y => return x * y;
+		let add = (x, y) => {
+			return x + y;
+		}
 
 		// Don't make changes below this line	
 		
@@ -147,7 +148,6 @@ try {
 		
 		solved++;
 	})();
-	*/
 
   /// Destructuring ///
 
