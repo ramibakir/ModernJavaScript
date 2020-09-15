@@ -156,10 +156,10 @@ try {
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// Tip: Spread operator might be needed too.
-		const [first, , third, ... arrRest] = arr;
-		let a = first;
-		let b = third;
-		let c = arrRest; 
+		const [a, , b, ... c] = arr;
+		// let a = first;
+		// let b = third;
+		// let c = arrRest; 
 
 		// Don't make changes below this line	
 		
@@ -170,16 +170,13 @@ try {
 		solved++;
 	})();
 
-  /*
 	(function UseArrayDestructuring2() {
 		let a = 1;
 		let b = 2;
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// You should not need a temporary variable anymore.
-		let tmp = a;
-		a = b;
-		b = tmp; 
+		[a, b] = [b, a];
 
 		// Don't make changes below this line	
 		
@@ -188,7 +185,6 @@ try {
 		
 		solved++;
 	})();
-	*/
 
   /*
 	(function UseObjectDestructuring1() {
