@@ -443,13 +443,12 @@ try {
 		solvedBonus++;
 	})();
 
-  /*
   (function UseDestructuring() {
     const arr = [1, 2, 3, 4];
 
     // Use spread & destructuring in the following 2 lines to move the first entry to the last.
-    const [first, rest] = arr;
-    const newArr = [rest, first];
+    const [first, ...rest] = arr;
+    const newArr = [...rest, first];
 
     // Don't make changes below this line
 
@@ -457,7 +456,6 @@ try {
 
     solvedBonus++;
 	})();
-	*/
 
   /// Iterable (bonus) ///
 
