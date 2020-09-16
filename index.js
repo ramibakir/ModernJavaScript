@@ -384,7 +384,6 @@ try {
 
   /// Destructuring (bonus) ///
 
-  /*
 	(function UseObjectDestructuring2() {
 		let obj = {
 			name: 'Oslo',
@@ -393,9 +392,10 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let a = obj.name;
-		let b = obj.age;
-		let c = obj.add;
+		const {name: a, age: b, add: c} = obj;
+		// let a = obj.name;
+		// let b = obj.age;
+		// let c = obj.add;
 
 		// Don't make changes below this line	
 		
@@ -405,7 +405,6 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
 
   /*
 	(function UseFailSoftDestructuring() {
