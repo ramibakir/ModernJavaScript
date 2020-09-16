@@ -291,7 +291,6 @@ try {
 		// - Do use object spread properties
 		// - Think about the order!
 		let result = {... obj1, ... obj3, ... obj2 };
-		console.log(result);
 
 		// Don't make changes below this line	
 		
@@ -422,7 +421,6 @@ try {
 		solvedBonus++;
 	})();
 
-  /*
 	(function UseNestedDestructuring() {
 		let obj = {
 			add: (x, y) => x + y,
@@ -431,9 +429,10 @@ try {
 			};
 		
 		// Use destructuring to change the 3 statements below into 1 statement.
-		let a = obj.add;
-		let b = obj.city.name;
-		let c = obj.arr.slice(1);
+		const {add: a, city: {name: b}, arr: [, ... c]} = obj;
+		// let a = obj.add;
+		// let b = obj.city.name;
+		// let c = obj.arr.slice(1);
 
 		// Don't make changes below this line	
 		
@@ -443,7 +442,6 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
 
   /*
   (function UseDestructuring() {
