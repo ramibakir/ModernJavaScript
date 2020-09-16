@@ -459,14 +459,14 @@ try {
 
   /// Iterable (bonus) ///
 
-  /*
 	(function UseGeneratorFunction() {
 		// Rewrite the function below to be a generator function ("function*" and "yield").
-		function range(start, end) {
+		function* range(start, end) {
 			let list = [];
 			while (start < end) {
 				list.push(start);
 				start++;
+				yield start - 1;
 			}
 			return list;
 		}	
@@ -482,7 +482,6 @@ try {
 
 		solvedBonus++;
 	})();
-	*/
 
   if (solved === toSolve) {
     console.log(`
