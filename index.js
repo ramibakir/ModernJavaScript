@@ -406,12 +406,11 @@ try {
 		solvedBonus++;
 	})();
 
-  /*
 	(function UseFailSoftDestructuring() {
 		const arr = [1, 2];
 		
     // change the left side (before =) below to let the tests succeed.
-		let [a, b] = arr;
+		let [a, b, c = 3, d] = arr;
 
 		// Don't make changes below this line	
 		
@@ -422,7 +421,6 @@ try {
 
 		solvedBonus++;
 	})();
-	*/
 
   /*
 	(function UseNestedDestructuring() {
