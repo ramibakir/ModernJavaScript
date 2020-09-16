@@ -360,13 +360,12 @@ try {
 
   /// Arrow functions (bonus) ///
 
-  /*
 	(function UseArrow3() {
 		// Rewrite all functions as arrow functions. Use as minimal syntax as possible.
-		let one = function () { return 1; };
-		let two = function (x) { return x + x; };
-		let three = function (x, y) { return x + y; };
-		let four = function (x, y) {
+		let one = () => 1;
+		let two = x => x + x;
+		let three = (x, y) => x + y;
+		let four = (x, y) => {
 			let result = 0;
 			for (let i = x; i < y; i++)
 				result += i;
@@ -382,7 +381,6 @@ try {
 		
 		solvedBonus++;
 	})();
-	*/
 
   /// Destructuring (bonus) ///
 
